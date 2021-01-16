@@ -1,0 +1,111 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.cp-fullpage-center{
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: local('Dosis'), url(../fonts/DosisSemibold-pxJd.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'DosisBold';
+    src: local('DosisBold'), url(../fonts/DosisBold-OLR6.ttf) format('truetype');
+}
+
+.section{
+    text-align:center;
+}
+
+.cp-big-image{
+    width: 400px;
+}
+
+
+.cp-fullsize-container{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display:table-cell;
+    vertical-align:middle;
+    background-color: #7150F6;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.cp-title{
+    font-size: 65px;
+    color: white;
+    font-family: DosisBold;
+}
+
+.cp-start{
+    transition: background-color 0.5s ease;
+    border: solid white 2px;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: #7150F6;
+    font-size: 25px;
+    font-family: DosisBold;
+}
+
+.cp-start:hover{
+    cursor: pointer;
+    background-color: #4E38A8;
+}
+
+.cp-text{
+    color: white;
+    font-family: Dosis;
+    font-size: 20px;
+}
+
+.cp-progress-bar{
+    width: 250px;
+    height: 25px;
+    border: 1px white solid;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.cp-progression-bar{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+@keyframes grow {
+    from {
+        width: 0%
+    }
+    to {
+        width: 100%;
+    }
+}
