@@ -85,7 +85,7 @@ export default  ({ data }) => (
                 </div>
               </div>
             </div>
-            <p className="cp-text">A cela s'ajoute des notions en devops (JBoss principalement) meme si j'ai plutot l'habitude de services de deploiements continue comme Netlify</p>
+            <p className="cp-text">A cela s'ajoute des notions en devops (JBoss principalement) meme si j'ai plutot l'habitude de services de déploiements continue comme Netlify</p>
             <p className="cp-text">Ainsi que très sommaire en SEO</p>
           </div>
           <div className="section">
@@ -118,7 +118,7 @@ export default  ({ data }) => (
             </div>
           </div>
           <div className="section">
-            <p className="cp-text">Et voila! Merci d'avoir pris le temps de voir ce site</p>
+            <p className="cp-text">Et voilà! Merci d'avoir pris le temps de voir ce site</p>
             <p className="cp-text">Il a été réalisé avec le framwork gatsby et est basé sur la libraire fullpage.js pour le style.️</p>
             <a href="https://www.youtube.com/watch?v=Uno9vKIsuoU">
               <div className="cp-start">Petit bonus : comment a été fait le site?</div>
