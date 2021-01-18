@@ -1,7 +1,5 @@
 import React, {useEffect} from "react"
 import ReactFullpage from '@fullpage/react-fullpage'
-import { graphql, Link } from "gatsby"
-import Img from "gatsby-image"
 
 const fullpageOptions = {
   sectionsColor: ['#282c34', '#ff5f45', '#0798ec','#04D642','#7150F6'],
@@ -9,7 +7,6 @@ const fullpageOptions = {
 }
 
 export default  ({ data }) => (
-
   <ReactFullpage
     {...fullpageOptions}
     render={({ state, fullpageApi }) => {
@@ -31,25 +28,25 @@ export default  ({ data }) => (
               <div>
                 <p className="cp-text">Java</p>
                 <div className="cp-progress-bar">
-                  <div className="cp-progression-bar"></div>
+                  <div className="cp-progression-bar cp-progression-bar-full"></div>
                 </div>
               </div>
               <div>
                 <p className="cp-text">TypeScript / Javascript (dévelopement mobile)</p>
                 <div className="cp-progress-bar">
-                  <div className="cp-progression-bar"></div>
+                  <div className="cp-progression-bar cp-progression-bar-full-low"></div>
                 </div>
               </div>
               <div>
                 <p className="cp-text">C++ / C</p>
                 <div className="cp-progress-bar">
-                  <div className="cp-progression-bar"></div>
+                  <div className="cp-progression-bar cp-progression-bar-medium"></div>
                 </div>
               </div>
               <div>
                 <p className="cp-text">Python</p>
                 <div className="cp-progress-bar">
-                  <div className="cp-progression-bar"></div>
+                  <div className="cp-progression-bar cp-progression-bar-medium"></div>
                 </div>
               </div>
             </div>
@@ -60,27 +57,33 @@ export default  ({ data }) => (
               <div>
                 <p className="cp-text">Angular</p>
                 <div className="cp-progress-bar">
-                  <div className="cp-progression-bar"></div>
+                  <div className="cp-progression-bar cp-progression-bar-full"></div>
                 </div>
               </div>
               <div>
                 <p className="cp-text">React</p>
                 <div className="cp-progress-bar">
-                  <div className="cp-progression-bar"></div>
+                  <div className="cp-progression-bar cp-progression-bar-full-low"></div>
                 </div>
               </div>
               <div>
                 <p className="cp-text">Node</p>
                 <div className="cp-progress-bar">
-                  <div className="cp-progression-bar"></div>
+                  <div className="cp-progression-bar cp-progression-bar-full-low"></div>
                 </div>
               </div>
               <div>
-              <p className="cp-text">Spring</p>
-              <div className="cp-progress-bar">
-                <div className="cp-progression-bar"></div>
+                <p className="cp-text">Spring</p>
+                <div className="cp-progress-bar">
+                  <div className="cp-progression-bar cp-progression-bar-low"></div>
+                </div>
               </div>
-            </div>
+              <div>
+                <p className="cp-text">PHP</p>
+                <div className="cp-progress-bar">
+                  <div className="cp-progression-bar cp-progression-bar-low"></div>
+                </div>
+              </div>
             </div>
             <p className="cp-text">A cela s'ajoute des notions en devops (JBoss principalement) meme si j'ai plutot l'habitude de services de deploiements continue comme Netlify</p>
             <p className="cp-text">Ainsi que très sommaire en SEO</p>
@@ -89,27 +92,27 @@ export default  ({ data }) => (
             <h1 className="cp-title">Autres notions</h1>
             <div style={{width: "fit-content", margin: "auto"}}>
               <div>
-                <p className="cp-text">Angular</p>
+                <p className="cp-text">Motivation</p>
                 <div className="cp-progress-bar">
-                  <div className="cp-progression-bar"></div>
+                  <div className="cp-progression-bar cp-progression-bar-motivation"></div>
                 </div>
               </div>
               <div>
-                <p className="cp-text">React</p>
+                <p className="cp-text">Environnement Linux (réseau/server/sécurité)</p>
                 <div className="cp-progress-bar">
-                  <div className="cp-progression-bar"></div>
+                  <div className="cp-progression-bar cp-progression-bar-full-low"></div>
                 </div>
               </div>
               <div>
-                <p className="cp-text">Node</p>
+                <p className="cp-text">Design</p>
                 <div className="cp-progress-bar">
-                  <div className="cp-progression-bar"></div>
+                  <div className="cp-progression-bar cp-progression-bar-low"></div>
                 </div>
               </div>
               <div>
-                <p className="cp-text">Spring</p>
+                <p className="cp-text">BDD (SQL)</p>
                 <div className="cp-progress-bar">
-                  <div className="cp-progression-bar"></div>
+                  <div className="cp-progression-bar cp-progression-bar-low-low"></div>
                 </div>
               </div>
             </div>

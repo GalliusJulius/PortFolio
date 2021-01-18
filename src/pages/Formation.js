@@ -27,6 +27,7 @@ export default  ({ data }) => (
           </div>
           <div className="section">
             <h1 className="cp-title">Lycée</h1>
+            <Img className="cp-big-image" fluid={data.allFile.edges[0].node.childImageSharp.fluid} />
             <p className="cp-text">J'ai fait un BAC S SI option ISN.</p>
             <p className="cp-text">C'est là que j'ai découvert le code :</p>
             <ul style={{width: "fit-content", margin: "auto"}}>
@@ -38,6 +39,7 @@ export default  ({ data }) => (
           </div>
           <div className="section">
             <h1 className="cp-title">DUT</h1>
+            <Img className="cp-big-image" fluid={data.allFile.edges[1].node.childImageSharp.fluid} />
             <p className="cp-text">Un choix par défaut, ma terminale n'ayant pas été à la hauteur de l'algo APB j'ai eu mon dernier choix..</p>
             <p className="cp-text">Cependant maintenant je pense réelement que cette formation me correspondait</p>
             <p className="cp-text">J'ai découvert beaucoup avec notamment :</p>
@@ -48,10 +50,11 @@ export default  ({ data }) => (
               <li className="cp-text" style={{textAlign:"left"}}>Les réseaux, la sécurité informatique</li>
               <li className="cp-text" style={{textAlign:"left"}}>La gestion / conception de projets informatiques</li>
             </ul>
-            <p className="cp-text">C'est là donc que j'ai appris à coder et le mieu possible.</p>
+            <p className="cp-text">C'est là donc que j'ai appris à coder et le mieu possible. J'ai surkiffé et j'ai fini 2ème sur une promo de 140 ce qui m'a ouvert toutes les portes post DUT info.</p>
           </div>
           <div className="section">
             <h1 className="cp-title">UTC</h1>
+            <Img className="cp-big-image" fluid={data.allFile.edges[2].node.childImageSharp.fluid} />
             <p className="cp-text">Venant de DUT mes matières à l'UTC étaient plutôt dédiées à rattraper mon niveau scientifique.</p>
             <p className="cp-text">Je trouve que j'ai surtout appris (pour l'informatique) en dehors des cours avec les assocs, les projets.. (prochaine section)</p>
             <p className="cp-text">Comme matière d'informatique j'ai fait : SY31, MI01, LO21, NF16</p>
@@ -72,14 +75,26 @@ export default  ({ data }) => (
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "RouenMap.png" }) {
-      childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fixed(width: 500, height: 400) {
-          ...GatsbyImageSharpFixed
+      allFile(
+        filter: {
+          extension: { regex: "/(jpg)|(png)|(jpeg)/" }
+          relativeDirectory: { eq: "section2" }
+        }
+      ) {
+        edges {
+          node {
+            base
+            childImageSharp {
+              fluid {
+                base64
+                aspectRatio
+                src
+                srcSet
+                sizes
+              }
+            }
+          }
         }
       }
     }
-  }
 `
