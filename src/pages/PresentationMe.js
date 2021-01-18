@@ -6,8 +6,6 @@ import Img from "gatsby-image"
 const fullpageOptions = {
   sectionsColor: ['#282c34', '#ff5f45', '#0798ec','#04D642','#7150F6'],
   callbacks: ['onLeave', 'afterLoad'],
-  anchors: ['firstPage', 'secondPage', 'thirdPage','quatrieme','cinqueime'],
-
 }
 
 export default  ({ data }) => (
@@ -21,6 +19,7 @@ export default  ({ data }) => (
           console.log('going down...' + state.origin.index)
         }
       }
+      console.log(data.allFile)
       return (
         <div id="fullpage-wrapper">
           <div className="section">
@@ -33,7 +32,7 @@ export default  ({ data }) => (
               <h1 className="cp-title">Ça part de là !</h1>
               <p className="cp-text">Je suis né dans la banlieue de Rouen (Mont St aignant)</p>
               <p className="cp-text">J'y suis resté jusque mes 5 ans.</p>
-            <Img className="cp-big-image" fluid={data.allFile.edges[1].node.childImageSharp.fluid} />
+            <Img className="cp-big-image" fluid={data.allFile.edges[0].node.childImageSharp.fluid} />
           </div>
           <div className="section">
             <div className="slide">
@@ -41,7 +40,7 @@ export default  ({ data }) => (
               <p className="cp-text">J'ai ensuite eu l'incroyable chance de déménager et de m'enraciner dans l'une des plus belles regions de France : LA LORRAINE.</p>
               <p className="cp-text">Je vivais à St Avold, à côté de la frontière allemande et pas loin de Metz.</p>
               <p className="cp-text">Une région rude par son climat, les vestiges de la guerre MAIS magnifique par ces habitants et ces liqueurs.</p>
-              <Img className="cp-big-image" fluid={data.allFile.edges[2].node.childImageSharp.fluid} />
+              <Img className="cp-big-image" fluid={data.allFile.edges[1].node.childImageSharp.fluid} />
             </div>
             <div className="slide">
               <h1 className="cp-title">Ce que je faisais</h1>
@@ -56,7 +55,7 @@ export default  ({ data }) => (
               <h1 className="cp-title">Fun fact</h1>
               <p className="cp-text">C'est dans ma petit ville mosellane que Miss France 2021 a fait sa première apparition (noraj).</p>
               <p className="cp-text">(un site qui dénonce ici)</p>
-              <Img className="cp-big-image" fluid={data.allFile.edges[0].node.childImageSharp.fluid} />
+              <Img className="cp-big-image" fluid={data.allFile.edges[2].node.childImageSharp.fluid} />
             </div>
           </div>
           <div className="section">
@@ -82,6 +81,7 @@ export default  ({ data }) => (
 export const query = graphql`
   query {
       allFile(
+        sort: {order: ASC, fields: name}
         filter: {
           extension: { regex: "/(jpg)|(png)|(jpeg)/" }
           relativeDirectory: { eq: "section1" }

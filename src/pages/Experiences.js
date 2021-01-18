@@ -34,11 +34,11 @@ export default  ({ data }) => (
               <p className="cp-text">En plus de gagner un peu d'argent, cela m'apprend à travailler avec des clients ainsi que monter en compétences</p>
               <p className="cp-text">Actuellement je travail pour une startup de mesure de qualité de l'air</p>
               <p className="cp-text">Je développe une application sous react native, elle permet de faire les relevés avec des capteurs et de les partager</p>
-              <Img className="cp-big-image" style={{width: "150px"}} fluid={data.allFile.edges[1].node.childImageSharp.fluid} />
+              <Img className="cp-big-image" style={{width: "150px"}} fluid={data.allFile.edges[0].node.childImageSharp.fluid} />
             </div>
             <div className="slide">
               <h1 className="cp-title">Expérience pro : TNO9 chez Amadeus</h1>
-              <Img className="cp-big-image" fluid={data.allFile.edges[2].node.childImageSharp.fluid} />
+              <Img className="cp-big-image" fluid={data.allFile.edges[1].node.childImageSharp.fluid} />
               <p className="cp-text">Je suis actuellement en TNO9 que je réalise chez Amadeus à Sofia Antipolis</p>
               <p className="cp-text">Ma mission est de refaire une application qui est devenu trop vieille pour etre maintenu</p>
               <p className="cp-text">J'ai du donc faire un retro-engineering de l'ancienne, une maquette de la prochaine application ainsi qu'un choix pour les technologies</p>
@@ -54,7 +54,7 @@ export default  ({ data }) => (
               <p className="cp-text">Ce que j'ai pu faire : creer des modules permettant de controler les drones</p>
               <p className="cp-text">Faire des vols autonomes (avec un plan de vol + des détections d'ostacles)</p>
               <p className="cp-text">Implémenter des algorithmes d'odométrie sur les drones</p>
-              <Img className="cp-big-image" fluid={data.allFile.edges[3].node.childImageSharp.fluid} />
+              <Img className="cp-big-image" fluid={data.allFile.edges[2].node.childImageSharp.fluid} />
             </div>
           </div>
           <div className="section">
@@ -73,7 +73,7 @@ export default  ({ data }) => (
           <div className="section">
             <div className="slide">
               <h1 className="cp-title">Assos : Imaginarium Festival</h1>
-              <Img className="cp-big-image" fluid={data.allFile.edges[4].node.childImageSharp.fluid} />
+              <Img className="cp-big-image" fluid={data.allFile.edges[3].node.childImageSharp.fluid} />
               <p className="cp-text">J'étais dev à l'IF édition 2020</p>
               <p className="cp-text">Une très belle expérience aussi bien humainement que techniquement</p>
               <p className="cp-text">J'ai compris que participer aux associations me plaisait énormément</p>
@@ -81,7 +81,7 @@ export default  ({ data }) => (
             </div>
             <div className="slide">
               <h1 className="cp-title">Assos Fablab UTC et fablab IUT</h1>
-              <Img className="cp-big-image" fluid={data.allFile.edges[0].node.childImageSharp.fluid} />
+              <Img className="cp-big-image" fluid={data.allFile.edges[4].node.childImageSharp.fluid} />
               <p className="cp-text">L'une des seuls assos à l'IUT, je m'amusais avec des petits robots / applications web</p>
               <p className="cp-text">Je l'ai aussi fait à l'UTC mais j'étais très peu actif..</p>
             </div>
@@ -102,6 +102,7 @@ export default  ({ data }) => (
 export const query = graphql`
   query {
       allFile(
+        sort: {order: ASC, fields: name}
         filter: {
           extension: { regex: "/(jpg)|(png)|(jpeg)/" }
           relativeDirectory: { eq: "section3" }

@@ -76,6 +76,7 @@ export default  ({ data }) => (
 export const query = graphql`
   query {
       allFile(
+        sort: {order: ASC, fields: name}
         filter: {
           extension: { regex: "/(jpg)|(png)|(jpeg)/" }
           relativeDirectory: { eq: "section2" }
