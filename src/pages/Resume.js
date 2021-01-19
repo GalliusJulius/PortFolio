@@ -120,6 +120,7 @@ export default  ({ data }) => (
           <div className="section">
             <p className="cp-text">Et voilà! Merci d'avoir pris le temps de voir ce site</p>
             <p className="cp-text">Il a été réalisé avec le framwork gatsby et est basé sur la libraire fullpage.js pour le style.️</p>
+            <p className="cp-text">Je suis à votre disposition si vous avez d'autres questions. 😀️</p>
             <a href="https://www.youtube.com/watch?v=Uno9vKIsuoU">
               <div className="cp-start">Petit bonus : comment a été fait le site?</div>
             </a>

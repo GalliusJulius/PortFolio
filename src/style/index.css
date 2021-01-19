@@ -137,3 +137,30 @@ code {
 .section{
   padding: 5px;
 }
+
+@media screen and (max-width: 640px) {
+  .cp-title{
+    font-size: 30px;
+  }
+
+  .cp-text{
+    font-size: 16px;
+  }
+
+  .cp-start{
+    font-size: 20px;
+  }
+
+  .section{
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .cp-big-image{
+    width: 250px;
+  }
+
+  .cp-progression-bar-motivation{
+    width: 150%;
+  }
+}
