@@ -87,7 +87,7 @@ export default  ({ data }) => (
           </div>
           <div className="section">
             <div className="slide">
-              <h1 className="cp-title">Assos : Pic'Asso P21</h1>
+              <h1 className="cp-title">Assos : Pic'Assis P21</h1>
               <Img className="cp-big-image" style={{width: "220px"}} fluid={data.allFile.edges[5].node.childImageSharp.fluid}/>
               <p className="cp-text">J'étais resp info du pic P21!</p>
               <p className="cp-text">Beaucoup de plaisir mais également beaucoup de travail</p>
@@ -103,7 +103,7 @@ export default  ({ data }) => (
               <p className="cp-text">J'étais dev à l'IF édition 2020</p>
               <p className="cp-text">Une très belle expérience aussi bien humainement que techniquement</p>
               <p className="cp-text">J'ai compris que participer aux associations me plaisait énormément</p>
-              <p className="cp-text">Nous avions réalisé un site avec gatsby (genre de react) et commencé une
+              <p className="cp-text">Nous avons réalisé un site avec gatsby (genre de react) et commencé une
                 application sous flutter</p>
             </div>
             <div className="slide">
@@ -111,12 +111,12 @@ export default  ({ data }) => (
               <Img className="cp-big-image" fluid={data.allFile.edges[6].node.childImageSharp.fluid}/>
               <p className="cp-text">L'une des seules assos à l'IUT, je m'amusais avec des petits robots / applications
                 web</p>
-              <p className="cp-text">Je l'ai aussi faite à l'UTC mais j'étais très peu actif..</p>
+              <p className="cp-text">Je l'ai aussi faite à l'UTC mais j'étais très peu actif...</p>
             </div>
           </div>
           <div className="section">
-            <p className="cp-text">Et voila! Je vous invite maintenant à la dernière partie.</p>
-            <p className="cp-text">Un petit récapitatif de ma candature ☺️</p>
+            <p className="cp-text">Et voilà! Je vous invite maintenant à la dernière partie.</p>
+            <p className="cp-text">Un petit récapitulatif de ma candidature ☺️</p>
             <Link to="/Resume/">
               <div className="cp-start">Résumé</div>
             </Link>

@@ -57,12 +57,12 @@ export default  ({ data }) => (
             <Img className="cp-big-image" fluid={data.allFile.edges[2].node.childImageSharp.fluid} />
             <p className="cp-text">Venant de DUT mes matières à l'UTC étaient plutôt dédiées à rattraper mon niveau scientifique.</p>
             <p className="cp-text">Je trouve que j'ai surtout appris (pour l'informatique) en dehors des cours avec les assos, les projets.. (prochaine section)</p>
-            <p className="cp-text">Comme matières d'informatique j'ai fait : SY31, MI01, LO21, NF16</p>
-            <p className="cp-text">Sinon : MT11 (2x..), FQ01 (le traquenard), GE37, LC14..</p>
+            <p className="cp-text">Comme matières informatique j'ai fait : SY31, MI01, LO21, NF16, SR05, SR09, SR03</p>
+            <p className="cp-text">Sinon : MT11 (2x..), FQ01 (le traquenard), GE37, LC14, LG50 (FX, oui c'est possible)</p>
           </div>
           <div className="section">
-            <p className="cp-text">Voilà pour mes formations, très orientée informatique</p>
-            <p className="cp-text">Je vous invite à cliquer sur le boutton pour voir la partie sur mes expériences</p>
+            <p className="cp-text">Voilà pour mes formations, très orientées informatique</p>
+            <p className="cp-text">Je vous invite à cliquer sur le bouton pour voir la partie sur mes expériences</p>
             <Link to="/Experiences/">
               <div className="cp-start">Experiences</div>
             </Link>

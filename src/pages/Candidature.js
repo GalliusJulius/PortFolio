@@ -31,12 +31,12 @@ export default  ({ data }) => (
     </div>
     <div className="section">
       <div className="slide">
-        <h1 className="cp-title">Appro biere</h1>
+        <h1 className="cp-title">Appro (apéro) biere</h1>
         <p className="cp-text">Et oui, pas de l'info en 1er choix!</p>
         <p className="cp-text">J'aimerais bien participer au défi que constitue la transition vers un nouveau fournisseur</p>
         <p className="cp-text">Je pense avoir le sérieux, la rigueur ainsi que l'assiduité pour ce poste</p>
-        <p className="cp-text">Sans compter que j'adore la biere (et aussi le poiré)</p>
-        <p className="cp-text">Évidement même si j'étais appro bière je resterai disponible pour la team info</p>
+        <p className="cp-text">Sans compter que j'adore la bière (et aussi le poiré)</p>
+        <p className="cp-text">Évidemment, même si j'étais appro bière je resterais disponible pour la team info</p>
       </div>
       <div className="slide">
         <h1 className="cp-title">Illustration de mon amour pour la bière</h1>
