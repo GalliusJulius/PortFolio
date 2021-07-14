@@ -5,12 +5,12 @@ import '../style/index.css'
 
 const IndexPage = () => (
     <div className="cp-fullsize-container">
-      <h1 className="cp-title">Bienvenue sur ma candidature pour le pic P21</h1>
-      <p className="cp-text">Le site a pour but de me présenter de façon moins formel :)</p>
-      <p className="cp-text">Et aussi de vous montrer ce que je sais faire !</p>
+      <h1 className="cp-title">Bienvenue sur ma candidature pour le pic A21!</h1>
+      <p className="cp-text">Je vais vous parler de moi / ce que je veux faire dans le pic 😃</p>
+      <p className="cp-text">Et surtout vous montrer que je suis <b>SUPER</b> motivé!</p>
       <p className="cp-text">Bonne navigation !</p>
-      <Link to="/PresentationMe/">
-        <div className="cp-start">Commencer</div>
+      <Link to="/Sommaire/">
+        <div className="cp-start">Commencer la visite 👀</div>
       </Link>
     </div>
 )

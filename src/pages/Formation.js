@@ -31,9 +31,9 @@ export default  ({ data }) => (
             <p className="cp-text">J'ai fait un BAC S SI option ISN.</p>
             <p className="cp-text">C'est là que j'ai découvert le code :</p>
             <ul style={{width: "fit-content", margin: "auto"}}>
-              <li className="cp-text" style={{textAlign:"left"}}>Le python en ISN</li>
-              <li className="cp-text" style={{textAlign:"left"}}>Un peu de web (html/css) également en ISN</li>
-              <li className="cp-text" style={{textAlign:"left"}}>Arduino en Science de l'ingénieur</li>
+              <li className="cp-text">Le python en ISN</li>
+              <li className="cp-text">Un peu de web (html/css) également en ISN</li>
+              <li className="cp-text">Arduino en Science de l'ingénieur</li>
             </ul>
             <p className="cp-text">concrètement je ne savais pas faire grand chose mais ça me plaisait</p>
           </div>
@@ -44,11 +44,11 @@ export default  ({ data }) => (
             <p className="cp-text">Cependant maintenant je pense réellement que cette formation me correspondait</p>
             <p className="cp-text">J'ai beaucoup découvert avec notamment :</p>
             <ul style={{width: "fit-content", margin: "auto"}}>
-              <li className="cp-text" style={{textAlign:"left"}}>Les langages logiciels : Java, C, Python</li>
-              <li className="cp-text" style={{textAlign:"left"}}>Le web : HTML, CSS, JavaScript, PHP (Symfony)</li>
-              <li className="cp-text" style={{textAlign:"left"}}>Les BDD : SQL / PLSQL</li>
-              <li className="cp-text" style={{textAlign:"left"}}>Les réseaux, la sécurité informatique</li>
-              <li className="cp-text" style={{textAlign:"left"}}>La gestion / conception de projets informatiques</li>
+              <li className="cp-text" >Les langages logiciels : Java, C, Python</li>
+              <li className="cp-text" >Le web : HTML, CSS, JavaScript, PHP (Symfony)</li>
+              <li className="cp-text" >Les BDD : SQL / PLSQL</li>
+              <li className="cp-text" >Les réseaux, la sécurité informatique</li>
+              <li className="cp-text" >La gestion / conception de projets informatiques</li>
             </ul>
             <p className="cp-text">C'est là donc que j'ai appris à coder et le mieux possible. J'ai surkiffé et j'ai fini 2ème sur une promo de 140 ce qui m'a ouvert toutes les portes post DUT info.</p>
           </div>

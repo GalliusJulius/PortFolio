@@ -4,7 +4,12 @@ import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 const fullpageOptions = {
-  sectionsColor: ['#282c34', '#ff5f45', '#0798ec','#04D642','#7150F6'],
+  sectionsColor: ['#282c34',
+    '#ff5f45',
+    '#0798ec',
+    '#04D642',
+    '#7150F6',
+    '#FFF225'],
   callbacks: ['onLeave', 'afterLoad'],
 }
 
@@ -25,7 +30,7 @@ export default  ({ data }) => (
           <div className="section">
             <h1 className="cp-title">D'où je viens, qui-suis je ?</h1>
             <p className="cp-text">Tout d'abord enchanté.</p>
-            <p className="cp-text">Je m'apelle Victor Moreliere j'ai 21 ans et à travers ce site j'espere vous montrer qui je suis et ce que je peux apporter au PIC dans la team info.</p>
+            <p className="cp-text">Je m'apelle Victor Moreliere j'ai 22 ans et à travers ce site j'espere vous montrer qui je suis et ce que je peux apporter au PIC dans la team info.</p>
             <p className="cp-text">Slide vers le bas pour en savoir plus.</p>
           </div>
           <div className="section">
@@ -65,10 +70,11 @@ export default  ({ data }) => (
             <Img className="cp-big-image" fluid={data.allFile.edges[3].node.childImageSharp.fluid} />
             <p className="cp-text">Ville réellement sous-côté ! 😔</p>
           </div>
+
           <div className="section">
             <p className="cp-text">Voila pour la brève présentation me concernant 😁</p>
-            <p className="cp-text">Maintenant on va passer à la partie CV!</p>
-            <Link to="/Formation/">
+            <p className="cp-text">On va voir maintenant ce que je demande dans le PIC!</p>
+            <Link to="/Candidature/">
               <div className="cp-start">Continuer</div>
             </Link>
           </div>

@@ -138,6 +138,18 @@ code {
   padding: 5px;
 }
 
+li{
+  color: white;
+  font-family: Dosis;
+  font-size: 20px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li:hover{
+  color: #ff5f45;
+}
+
 @media screen and (max-width: 640px) {
   .cp-title{
     font-size: 30px;

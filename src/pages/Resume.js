@@ -56,36 +56,36 @@ export default  ({ data }) => (
             <div style={{width: "fit-content", margin: "auto"}}>
               <div>
                 <p className="cp-text">Angular</p>
-                <div className="cp-progress-bar">
+                <div className="cp-progress-bar" style={{width: "fit-content", margin: "auto"}}>
                   <div className="cp-progression-bar cp-progression-bar-full"></div>
                 </div>
               </div>
               <div>
                 <p className="cp-text">React</p>
-                <div className="cp-progress-bar">
+                <div className="cp-progress-bar" style={{width: "fit-content", margin: "auto"}}>
                   <div className="cp-progression-bar cp-progression-bar-full-low"></div>
                 </div>
               </div>
               <div>
                 <p className="cp-text">Node</p>
-                <div className="cp-progress-bar">
+                <div className="cp-progress-bar" style={{width: "fit-content", margin: "auto"}}>
                   <div className="cp-progression-bar cp-progression-bar-full-low"></div>
                 </div>
               </div>
               <div>
                 <p className="cp-text">Spring</p>
-                <div className="cp-progress-bar">
+                <div className="cp-progress-bar" style={{width: "fit-content", margin: "auto"}}>
                   <div className="cp-progression-bar cp-progression-bar-low"></div>
                 </div>
               </div>
               <div>
                 <p className="cp-text">PHP</p>
-                <div className="cp-progress-bar">
+                <div className="cp-progress-bar" style={{width: "fit-content", margin: "auto"}}>
                   <div className="cp-progression-bar cp-progression-bar-low"></div>
                 </div>
               </div>
             </div>
-            <p className="cp-text">A cela s'ajoute des notions en devops (JBoss principalement) meme si j'ai plutot l'habitude de services de déploiements continue comme Netlify</p>
+            <p className="cp-text">A cela s'ajoute des notions en devops (JBoss principalement) même si j'ai plutôt l'habitude des services de déploiement continu comme Netlify</p>
             <p className="cp-text">Ainsi que très sommaire en SEO</p>
           </div>
           <div className="section">
@@ -93,25 +93,25 @@ export default  ({ data }) => (
             <div style={{width: "fit-content", margin: "auto"}}>
               <div>
                 <p className="cp-text">Motivation</p>
-                <div className="cp-progress-bar">
+                <div className="cp-progress-bar" style={{width: "fit-content", margin: "auto"}}>
                   <div className="cp-progression-bar cp-progression-bar-motivation"></div>
                 </div>
               </div>
               <div>
                 <p className="cp-text">Environnement Linux (réseau/server/sécurité)</p>
-                <div className="cp-progress-bar">
+                <div className="cp-progress-bar" style={{width: "fit-content", margin: "auto"}}>
                   <div className="cp-progression-bar cp-progression-bar-full-low"></div>
                 </div>
               </div>
               <div>
                 <p className="cp-text">Design</p>
-                <div className="cp-progress-bar">
+                <div className="cp-progress-bar" style={{width: "fit-content", margin: "auto"}}>
                   <div className="cp-progression-bar cp-progression-bar-low"></div>
                 </div>
               </div>
               <div>
                 <p className="cp-text">BDD (SQL)</p>
-                <div className="cp-progress-bar">
+                <div className="cp-progress-bar" style={{width: "fit-content", margin: "auto"}}>
                   <div className="cp-progression-bar cp-progression-bar-low-low"></div>
                 </div>
               </div>
@@ -121,8 +121,8 @@ export default  ({ data }) => (
             <p className="cp-text">Et voilà! Merci d'avoir pris le temps de voir ce site</p>
             <p className="cp-text">Il a été réalisé avec le framwork gatsby et est basé sur la libraire fullpage.js pour le style.️</p>
             <p className="cp-text">Je suis à votre disposition si vous avez d'autres questions. 😀️</p>
-            <a href="https://www.youtube.com/watch?v=Uno9vKIsuoU">
-              <div className="cp-start">Petit bonus : comment a été fait le site?</div>
+            <a href="https://www.youtube.com/watch?v=enYdAxVcNZA">
+              <div className="cp-start">Petit bonus : comment est-ce que je me réveille chaque matin ?</div>
             </a>
           </div>
         </div>
